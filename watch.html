@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live MLB Stream</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Main Container -->
+  <div class="flex flex-col md:flex-row max-w-6xl mx-auto mt-6 px-4 gap-6">
+
+    <!-- Stream Player -->
+    <div class="flex-1 flex flex-col gap-6">
+
+      <!-- Notice Box -->
+      <div class="bg-gray-800 border border-gray-700 p-4 rounded-lg flex items-center gap-4">
+        <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M17 9.5L17.658 9.171C19.604 8.198 20.577 7.712 21.289 8.151C22 8.591 22 9.679 22 11.854V12.146C22 14.322 22 15.409 21.289 15.849C20.577 16.289 19.604 15.802 17.658 14.829L17 14.5V9.5Z" stroke="white" stroke-width="1.5"/>
+          <path d="M9.5 15.5V8.5M9.5 8.5L12 11.5M9.5 8.5L7 11.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span>Stream is live! Enjoy full-screen MLB streaming below.</span>
+      </div>
+
+      <!-- Center Banner Ad -->
+      <div class="flex justify-center">
+       <script type="text/javascript">
+	atOptions = {
+		'key' : 'c517ae9a87c81916bf5a78e3b5972fc6',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/c517ae9a87c81916bf5a78e3b5972fc6/invoke.js"></script>
+      </div>
+
+      <!-- Stream Iframe -->
+      <div class="iframe-container flex justify-center">
+        <iframe src="https://mlb1.pages.dev/" 
+                class="w-full max-w-4xl h-[500px] md:h-[600px] rounded-lg shadow-lg border border-gray-700" 
+                allowfullscreen allow="autoplay; encrypted-media"></iframe>
+      </div>
+
+      <!-- Bottom Banner Ad -->
+      <div class="flex justify-center">
+       <script type="text/javascript">
+	atOptions = {
+		'key' : '5c2577756b7f8f6cdf6b8d9ec4313072',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/5c2577756b7f8f6cdf6b8d9ec4313072/invoke.js"></script>
+      </div>
+
+    </div>
+
+    <!-- Sidebar Ads -->
+    <aside class="w-80 flex-shrink-0 flex flex-col gap-6">
+      <div class="ad bg-gray-800 p-2 rounded-lg shadow-md flex justify-center">
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '0b2f1b7a9c518c02603c4ae174d04237',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/0b2f1b7a9c518c02603c4ae174d04237/invoke.js"></script>
+      </div>
+
+      <div class="ad bg-gray-800 p-2 rounded-lg shadow-md flex justify-center">
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '94f76e4e7e675694b52fb858d6718487',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/94f76e4e7e675694b52fb858d6718487/invoke.js"></script>
+      </div>
+    </aside>
+
+  </div>
+
+</body>
+</html>
