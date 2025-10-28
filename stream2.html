@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SportsOnline - Live Matches</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .match-box {
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .match-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(34,197,94,0.4);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+
+  <!-- ✅ Header -->
+  <header class="bg-gray-800 p-4 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-400">Jokerlivestreams</h1>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#" class="hover:text-green-400">Home</a>
+        <a href="#" class="hover:text-green-400">Live</a>
+        <a href="#" class="hover:text-green-400">Schedule</a>
+        <a href="#" class="hover:text-green-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Main Layout -->
+  <div class="flex flex-1 max-w-6xl mx-auto w-full p-4 gap-6">
+    
+    <!-- ✅ Sidebar with Categories + Ads -->
+    <aside class="w-64 bg-gray-800 rounded-xl p-4 shadow-lg hidden md:flex flex-col items-center justify-start gap-6 overflow-y-auto">
+      <h2 class="text-lg font-semibold text-green-400">Categories</h2>
+
+      
+
+      <!-- ✅ Sidebar Ads -->
+      <div class="space-y-4 mt-4">
+        <div class="bg-gray-900 rounded-lg p-2 flex justify-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key': '4bf51cdb47a8cd765588b05699d07bdb',
+              'format': 'iframe',
+              'height': 300,
+              'width': 160,
+              'params': {}
+            };
+          </script>
+          <script type="text/javascript" src="//www.highperformanceformat.com/4bf51cdb47a8cd765588b05699d07bdb/invoke.js"></script>
+        </div>
+
+        <div class="bg-gray-900 rounded-lg p-2 flex justify-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key': '1891e21cc6317223157287c8c8df488b',
+              'format': 'iframe',
+              'height': 600,
+              'width': 160,
+              'params': {}
+            };
+          </script>
+          <script type="text/javascript" src="//www.highperformanceformat.com/1891e21cc6317223157287c8c8df488b/invoke.js"></script>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ✅ Main Content -->
+    <main class="flex-1 flex flex-col items-center justify-start">
+
+      <h2 class="text-xl font-bold text-center mb-6">Live Matches</h2>
+
+      <!-- ✅ 728x90 Ad Above Match -->
+      <div class="mb-6">
+        <script type="text/javascript">
+          atOptions = {
+            'key': 'e7b02ef17b075955246fe86e80802c15',
+            'format': 'iframe',
+            'height': 90,
+            'width': 728,
+            'params': {}
+          };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/e7b02ef17b075955246fe86e80802c15/invoke.js"></script>
+      </div>
+
+<a href="#" 
+   class="match-box block bg-gray-800 w-full max-w-2xl rounded-2xl p-6 shadow-lg border border-gray-700 space-y-4 text-center mt-6 hover:bg-gray-700 transition-transform transform hover:scale-105">
+
+  <div class="text-green-400 text-lg font-semibold">MLB</div>
+
+  <div class="flex items-center justify-between gap-3">
+    <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png?w=100&h=100&transparent=true" alt="Team 1" class="w-16 h-16 rounded">
+    <span class="flex-1 text-sm font-medium text-white">
+      Toronto Blue Jays vs Los Angeles Dodgers
+    </span>
+    <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png?w=100&h=100&transparent=true" alt="Team 2" class="w-16 h-16 rounded">
+  </div>
+
+  <div class="flex justify-between text-sm text-gray-300 border-t border-gray-700 pt-3">
+    <div>Date: <span class="font-semibold text-white">October 28, 2025</span></div>
+    <div>Time: <span class="font-semibold text-white">08:00 PM ET</span></div>
+  </div>
+</a>
+
+
+    </main>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer class="text-center text-xs text-gray-400 py-4 border-t border-gray-800">
+    © All rights reserved 2025 SportsOnline
+  </footer>
+
+  <!-- ✅ JS Redirect -->
+  <script>
+    function goToWatchPage(element) {
+      const iframeLink = element.getAttribute('data-iframe');
+      // Redirect to watch.html and pass the iframe link as a query parameter
+      window.location.href = `watch.html?src=${encodeURIComponent(iframeLink)}`;
+    }
+  </script>
+
+</body>
+</html>
